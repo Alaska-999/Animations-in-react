@@ -18,13 +18,20 @@ input {
     margin: 20px;
 }
 
-.fade-enter-active {
+.todo {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.todo-exit-active {
+    animation: fade-out 500ms forwards;
+}
+
+.todo-enter-active {
     animation: fade-in 500ms forwards;
 }
 
-.fade-exit-active {
-    animation: fade-out 500ms forwards;
-}
 
 @keyframes fade-in {
     0% {
